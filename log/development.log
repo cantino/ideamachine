@@ -1,0 +1,221 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateIdeas (20091222080524)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222080524')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ideas")[0m
+
+
+Processing IdeasController#index (for 127.0.0.1 at 2009-12-22 00:34:59) [GET]
+  [4;36;1mIdea Load (0.4ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/ideas
+Rendering ideas/index
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#new (for 127.0.0.1 at 2009-12-22 00:35:00) [GET]
+Rendering template within layouts/ideas
+Rendering ideas/new
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#create (for 127.0.0.1 at 2009-12-22 00:35:02) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"text"=>"fgd"}, "authenticity_token"=>"B4OHveqf4RejYw0ZgTUVVnhuAOCJTdzld9puRd+giOo="}
+  [4;35;1mIdea Create (0.3ms)[0m   [0mINSERT INTO "ideas" ("created_at", "updated_at", "text") VALUES('2009-12-22 08:35:02', '2009-12-22 08:35:02', 'fgd')[0m
+Redirected to http://localhost:3000/ideas/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for 127.0.0.1 at 2009-12-22 00:35:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/ideas
+Rendering ideas/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/ideas/1]
+
+
+Processing IdeasController#index (for 127.0.0.1 at 2009-12-22 00:35:03) [GET]
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/ideas
+Rendering ideas/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#destroy (for 127.0.0.1 at 2009-12-22 00:35:05) [DELETE]
+  Parameters: {"authenticity_token"=>"B4OHveqf4RejYw0ZgTUVVnhuAOCJTdzld9puRd+giOo=", "id"=>"1"}
+  [4;36;1mIdea Load (0.2ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+  [4;35;1mIdea Destroy (0.2ms)[0m   [0mDELETE FROM "ideas" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/ideas
+Completed in 23ms (DB: 0) | 302 Found [http://localhost/ideas/1]
+
+
+Processing IdeasController#index (for 127.0.0.1 at 2009-12-22 00:35:05) [GET]
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/ideas
+Rendering ideas/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#generate (for 127.0.0.1 at 2009-12-22 00:44:21) [GET]
+
+NoMethodError (undefined method `generate' for #<IdeaMachine::Constructor:0x7f8d0a952470>):
+  app/controllers/ideas_controller.rb:21:in `generate'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#generate (for 127.0.0.1 at 2009-12-22 00:44:24) [GET]
+
+NoMethodError (undefined method `generate' for #<IdeaMachine::Constructor:0x7f8d0a952470>):
+  app/controllers/ideas_controller.rb:21:in `generate'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#generate (for 127.0.0.1 at 2009-12-22 00:44:38) [GET]
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate]
+
+
+Processing IdeasController#generate (for 127.0.0.1 at 2009-12-22 00:52:06) [GET]
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-22 00:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/frontpage" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-22 00:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/frontpage/index" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-22 00:52:21) [GET]
+
+ActionController::RoutingError (No route matches "/frontpage/index.html.erb" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-22 00:53:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 00:53:38) [GET]
+Rendering frontpage/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 00:54:05) [GET]
+
+NoMethodError (undefined method `main' for #<FrontpageController:0x7f1972551e68>):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 00:54:14) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]

@@ -29,6 +29,14 @@ module IdeaMachine
       end
     end
 
+    def generate(num=1)
+      out = []
+      num.times do
+        out << pick('RESULT').strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+      end
+      out
+    end
+
     def pick(key, blocked = {})
       choices = (@patterns[key] - (blocked[key] || []))
       raise OutOfOptions if choices.length == 0

@@ -5,13 +5,13 @@ INDUSTRY    education {INDUSTRY_TYPE}
 INDUSTRY    training {INDUSTRY_TYPE}
 INDUSTRY    human resources {INDUSTRY_TYPE}
 INDUSTRY    information services {INDUSTRY_TYPE}
-INDUSTRY    international business and trade {INDUSTRY_TYPE}
+INDUSTRY    international business and trade {INDUSTRY_TYPE|s}
 INDUSTRY    investing {INDUSTRY_TYPE}
 INDUSTRY    management {INDUSTRY_TYPE}
 INDUSTRY    marketing {INDUSTRY_TYPE}
 INDUSTRY    advertising {INDUSTRY_TYPE}
 INDUSTRY    small business {INDUSTRY_TYPE}
-INDUSTRY    aerospace and defense {INDUSTRY_TYPE}
+INDUSTRY    aerospace and defense {INDUSTRY_TYPE|s}
 INDUSTRY    forestry {INDUSTRY_TYPE}
 INDUSTRY    agriculture {INDUSTRY_TYPE}
 INDUSTRY    banking {INDUSTRY_TYPE}
@@ -32,10 +32,10 @@ INDUSTRY    financial services {INDUSTRY_TYPE}
 INDUSTRY    food {INDUSTRY_TYPE}
 INDUSTRY    healthcare {INDUSTRY_TYPE}
 INDUSTRY    hospitality {INDUSTRY_TYPE}
-INDUSTRY    industrial goods and services {INDUSTRY_TYPE}
+INDUSTRY    industrial goods and services {INDUSTRY_TYPE|s}
 INDUSTRY    information technology {INDUSTRY_TYPE}
 INDUSTRY    materials {INDUSTRY_TYPE}
-INDUSTRY    mining and drilling {INDUSTRY_TYPE}
+INDUSTRY    mining and drilling {INDUSTRY_TYPE|s}
 INDUSTRY    printing {INDUSTRY_TYPE}
 INDUSTRY    publishing {INDUSTRY_TYPE}
 INDUSTRY    real estate {INDUSTRY_TYPE}
