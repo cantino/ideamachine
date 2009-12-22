@@ -1,0 +1,50 @@
+INDUSTRY    accounting {INDUSTRY_TYPE}
+INDUSTRY    customer service {INDUSTRY_TYPE}
+INDUSTRY    e-commerce {INDUSTRY_TYPE}
+INDUSTRY    education {INDUSTRY_TYPE}
+INDUSTRY    training {INDUSTRY_TYPE}
+INDUSTRY    human resources {INDUSTRY_TYPE}
+INDUSTRY    information services {INDUSTRY_TYPE}
+INDUSTRY    international business and trade {INDUSTRY_TYPE}
+INDUSTRY    investing {INDUSTRY_TYPE}
+INDUSTRY    management {INDUSTRY_TYPE}
+INDUSTRY    marketing {INDUSTRY_TYPE}
+INDUSTRY    advertising {INDUSTRY_TYPE}
+INDUSTRY    small business {INDUSTRY_TYPE}
+INDUSTRY    aerospace and defense {INDUSTRY_TYPE}
+INDUSTRY    forestry {INDUSTRY_TYPE}
+INDUSTRY    agriculture {INDUSTRY_TYPE}
+INDUSTRY    banking {INDUSTRY_TYPE}
+INDUSTRY    arts {INDUSTRY_TYPE}
+INDUSTRY    entertainment {INDUSTRY_TYPE}
+INDUSTRY    automotive {INDUSTRY_TYPE}
+INDUSTRY    pharmaceuticals {INDUSTRY_TYPE}
+INDUSTRY    biotechnology {INDUSTRY_TYPE}
+INDUSTRY    business services {INDUSTRY_TYPE}
+INDUSTRY    chemical {INDUSTRY_TYPE}
+INDUSTRY    construction {INDUSTRY_TYPE}
+INDUSTRY    consumer goods {INDUSTRY_TYPE}
+INDUSTRY    consumer services {INDUSTRY_TYPE}
+INDUSTRY    electronics {INDUSTRY_TYPE}
+INDUSTRY    energy {INDUSTRY_TYPE}
+INDUSTRY    environmental products {INDUSTRY_TYPE}
+INDUSTRY    financial services {INDUSTRY_TYPE}
+INDUSTRY    food {INDUSTRY_TYPE}
+INDUSTRY    healthcare {INDUSTRY_TYPE}
+INDUSTRY    hospitality {INDUSTRY_TYPE}
+INDUSTRY    industrial goods and services {INDUSTRY_TYPE}
+INDUSTRY    information technology {INDUSTRY_TYPE}
+INDUSTRY    materials {INDUSTRY_TYPE}
+INDUSTRY    mining and drilling {INDUSTRY_TYPE}
+INDUSTRY    printing {INDUSTRY_TYPE}
+INDUSTRY    publishing {INDUSTRY_TYPE}
+INDUSTRY    real estate {INDUSTRY_TYPE}
+INDUSTRY    retail trade {INDUSTRY_TYPE}
+INDUSTRY    telecommunications {INDUSTRY_TYPE}
+INDUSTRY    textiles {INDUSTRY_TYPE}
+INDUSTRY    logistics {INDUSTRY_TYPE}
+INDUSTRY    transportation {INDUSTRY_TYPE}
+INDUSTRY    wholesale trade {INDUSTRY_TYPE}
+INDUSTRY_TYPE   industry
+INDUSTRY_TYPE   sector
+INDUSTRY_TYPE   community
