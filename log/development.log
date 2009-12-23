@@ -655,3 +655,79 @@ Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
 
 Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:15:01) [GET]
 Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:26:21) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:26:21) [GET]
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:27:06) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:27:06) [GET]
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:27:38) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:27:39) [GET]
+Completed in 15ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:28:55) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:28:55) [GET]
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:29:46) [GET]
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:32:21) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:32:21) [GET]
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-22 22:43:32) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 21ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:43:33) [GET]
+Completed in 89ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:43:50) [GET]
+Completed in 33ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:43:53) [GET]
+Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:46:20) [GET]
+Completed in 86ms (View: 55, DB: 0) | 200 OK [http://localhost/ideas/generate.json]

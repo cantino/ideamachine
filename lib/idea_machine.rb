@@ -55,8 +55,12 @@ module IdeaMachine
             sub_choice
           end
         else
-          if sub_expression =~ /^a\|(.*)$/i
-            pick($1, blocked).en.a
+          if sub_expression =~ /^(a)\|(.*)$/i
+            if ($1 == 'A')
+              pick($2, blocked).en.a.gsub(/^./) {|i| i.upcase}
+            else
+              pick($2, blocked).en.a
+            end
           elsif sub_expression =~ /^c\|(.*)$/i
             pick($1, blocked).gsub(/^./) {|i| i.upcase}
           elsif sub_expression =~ /^(.*?)\|s$/i

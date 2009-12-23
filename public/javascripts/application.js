@@ -19,7 +19,7 @@ function show_next_idea() {
   } else {
     var idea = ideas.shift();
     $('#idea').fadeOut(100, function() {
-      $('#idea').text(idea).fadeIn(100);
+      $('#idea').html(idea).fadeIn(100);
     });
     if (ideas.length < 10) load_ideas();
   }
