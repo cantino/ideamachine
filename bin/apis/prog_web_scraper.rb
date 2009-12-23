@@ -29,13 +29,13 @@ data = parselet.parse(:string => content)
 data['apis'].each do |api|
   desc = api['description'] && api['description'].strip.squeeze(" ")
   name = api['name'] && api['name'].strip.squeeze(" ")
-  url = api['url'] && api['name'].strip
+  url = api['url'] && api['url'].strip
   text = "#{name} #{desc}".gsub(/((\w+)(\s+\2)+)/, '\2')
   text = "#{name}".gsub(/((\w+)(\s+\2)+)/, '\2')
   next unless url
   if text =~ /\bAPI\b/i
-    puts "API  <a href='#{url}' target='_blank'>#{text}</a>"
+    puts "API  <a href='http://www.programmableweb.com#{url}' target='_blank'>#{text}</a>"
   else
-    puts "API  <a href='#{url}' target='_blank'>#{text} API</a>"
+    puts "API  <a href='http://www.programmableweb.com#{url}' target='_blank'>#{text} API</a>"
   end
 end
