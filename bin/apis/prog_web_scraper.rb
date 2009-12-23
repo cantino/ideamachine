@@ -2,7 +2,7 @@ require "rubygems"
 require "parsley"
 require "open-uri"
 require "pp"
- 
+
 json_string = <<-STR
   {
     "apis (tr)": [ {
@@ -13,7 +13,7 @@ json_string = <<-STR
     } ]
   }
 STR
- 
+
 cache_file = File.join(File.dirname(__FILE__), "programmableweb.html")
 if File.exist?(cache_file)
   content = File.read(cache_file)
@@ -29,11 +29,13 @@ data = parselet.parse(:string => content)
 data['apis'].each do |api|
   desc = api['description'] && api['description'].strip.squeeze(" ")
   name = api['name'] && api['name'].strip.squeeze(" ")
+  url = api['url'] && api['name'].strip
   text = "#{name} #{desc}".gsub(/((\w+)(\s+\2)+)/, '\2')
   text = "#{name}".gsub(/((\w+)(\s+\2)+)/, '\2')
+  next unless url
   if text =~ /\bAPI\b/i
-    puts "API  #{text}"
+    puts "API  <a href='#{url}' target='_blank'>#{text}</a>"
   else
-    puts "API  #{text} API"
+    puts "API  <a href='#{url}' target='_blank'>#{text} API</a>"
   end
 end

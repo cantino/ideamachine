@@ -2,7 +2,7 @@ RESULT        {Use,Leverage,Apply,Mashup,Hack} the {API} to {BUILD_ACTION} {a|PR
 RESULT        {Combine,Mix,Mashup} the {API} with the {API} in {a|ADJECTIVE} {way,manner}.
 RESULT        Are {today's,existing,current,standard,enterprise} {PRODUCT|s} {OPTIMIZATION}?
 RESULT        What is a {problem,situation,type of problem} that could {be fixed,be made better,be sped up,be made more usable,be made more mainstream,be brought to a new audience} with the {API}?  {c|QUESTION_WORD} you could {BUILD_ACTION} {a|PRODUCT} with it?
-RESULT        {c|QUESTION_WORD} {a|AD_TYPE} {WAY_OF_MAKING_MONEY} {USING} the {API}?
+RESULT        {c|QUESTION_WORD} {BUILD_ACTION} {a|AD_TYPE} {WAY_OF_MAKING_MONEY} {USING} the {API}?
 RESULT        {c|QUESTION_WORD} {a|ADJECTIVE} {AD_TYPE|s} {WAY_OF_MAKING_MONEY} {FOR} the {INDUSTRY}?
 RESULT        {Link,Combine,Mashup,Unify} the {API} with {COMMUNICATION_TOOL} {somehow,in some way,for great justice}.
 RESULT        {Monitize,Make money from,Profit from} the {API} with {AD_TYPE|s}.
