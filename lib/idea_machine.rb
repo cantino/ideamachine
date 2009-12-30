@@ -29,18 +29,27 @@ module IdeaMachine
       end
     end
 
-    def generate(num=1)
+    def generate(num=1, force_index = nil)
       out = []
       num.times do
-        out << pick('RESULT').strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+        begin
+          out << pick('RESULT', {}, force_index).strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+        rescue OutOfOptionsRetry
+          puts "WARNING: Got OutOfOptionsRetry"
+        end
       end
       out
     end
 
-    def pick(key, blocked = {})
+    def pick(key, blocked = {}, force_index = nil)
+      raise "Cannot find key #{key}" unless @patterns[key]
       choices = (@patterns[key] - (blocked[key] || []))
       raise OutOfOptions if choices.length == 0
-      result = choices[choices.length * rand]
+      result = if force_index
+        choices[force_index]
+      else
+        choices[choices.length * rand]
+      end
       blocked[key] ||= []
       blocked[key] << result
 
@@ -71,10 +80,10 @@ module IdeaMachine
           end
         end
       end
-    rescue OutOfOptions
-      raise OutOfOptionsRetry
     rescue OutOfOptionsRetry
       pick(key, blocked)
+    rescue OutOfOptions
+      raise OutOfOptionsRetry
     end
   end
 end

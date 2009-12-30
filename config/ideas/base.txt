@@ -1,16 +1,17 @@
-RESULT        {Use,Leverage,Apply,Mashup,Hack} the {API} to {BUILD_ACTION} {a|PRODUCT}.
+RESULT        {c|BUILD_ACTION} {a|PRODUCT}.
+RESULT        {c|BUILD_ACTION} {a|PRODUCT} {using,leveraging,applying,mashing up,with,utilizing,making use of} the {API} {in some way,to make it more interesting,in some manner,in an interesting way,in a surprising way,in a cool way,,,,in a cool way}.
 RESULT        {Combine,Mix,Mashup} the {API} with the {API} in {a|ADJECTIVE} {way,manner}.
 RESULT        Are {today's,existing,current,standard,enterprise} {PRODUCT|s} {OPTIMIZATION}?
 RESULT        What is a {problem,situation,type of problem} that could {be fixed,be made better,be sped up,be made more usable,be made more mainstream,be brought to a new audience} with the {API}?  {c|QUESTION_WORD} you could {BUILD_ACTION} {a|PRODUCT} with it?
 RESULT        {c|QUESTION_WORD} {SOMEONE} {BUILD_ACTION} {a|AD_TYPE} {WAY_OF_MAKING_MONEY} {USING} the {API}?
 RESULT        {c|QUESTION_WORD} {a|ADJECTIVE} {AD_TYPE|s} {WAY_OF_MAKING_MONEY} {FOR} the {INDUSTRY}?
 RESULT        {c|QUESTION_WORD} {SOMEONE} could {BUILD_ACTION} {a|IMPROVEMENT} {PRODUCT}?
-RESULT        {Link,Combine,Mashup,Unify} the {API} with {COMMUNICATION_TOOL} {somehow,in some way,for great justice}.
+RESULT        {Link,Combine,Mashup,Unify} the {API} with {TOOL} {somehow,in some way,for great justice}.
 RESULT        {Monitize,Make money from,Profit from} the {API} with {AD_TYPE|s}.
 RESULT        {What,Which tools,Which techniques,Are there any utilities that,Are there any tools that} would make {EXISTING_PRODUCT} {IMPROVEMENT}?
 RESULT        Apply the {API} or the {API} to {EXISTING_PRODUCT}.
-RESULT        {c|BUILD_ACTION} {ADJECTIVE} {AD_TYPE|s} for the {INDUSTRY}.
-RESULT        Make {COMMUNICATION_TOOL} more {engaging,enjoyable,easy to use,simple,easy} with {an addon,a widget,a companion site,a user site} and {monitize,make money,profit,augment} with {AD_TYPE|s}.
+RESULT        {c|BUILD_ACTION} {ADJECTIVE} {AD_TYPE|s} {FOR} the {INDUSTRY}.
+RESULT        Make {TOOL} more {engaging,enjoyable,easy to use,simple,easy} with {an addon,a widget,a companion site,a user site} and {monitize,make money,profit,augment} with {AD_TYPE|s}.
 RESULT        What {would,types of products would,software would,tools would} {help bring,aid in bringing,further bring,further extend} the {INDUSTRY} {online,more online,more on the web,into web 2.0}?
 RESULT        {Are there,Might there be,Could there be} {underserved,ignored,monitizable,needy} {subgroups,groups,people,niches,communities} in the {INDUSTRY}?
 RESULT        {c|QUESTION_WORD} {BUILD_ACTION} {a|PRODUCT} {FOR} the {INDUSTRY}?
@@ -21,28 +22,14 @@ RESULT        {c|BUILD_ACTION} {TO_BE_MADE_ABOUT} {ACTIONS} {GADGETS} {FOR} {OCC
 RESULT        {c|BUILD_ACTION} {TO_BE_MADE_ABOUT} {ACTIONS} {GADGETS}.
 RESULT        {Are you aware of everything that,Do you know what,Know what,Are you aware of what,Have you seen what,Have you considered what,Do you know about what,Are you aware of what} the {API} {can do,is capable of,,might be able to do}?  What {might,could} {SOMEONE} {BUILD_ACTION} {using,with,utilizing,leveraging} it?  {In addition,Also}, {there are probably,there must be} {ADJECTIVE} {TO_BE_MADE|s} to be {made,built,created,constructed} {with,using} {this,that} {product,tool,utility,service}.
 RESULT        How {might,would,could} {SOMEONE} {help,aid,enable,promote} {developing nations,poorer countries,disadvantaged people,disadvantaged countries,non-profits,clubs,afterschool programs,local organizations} with a new {product,website,tool,utility}?  What are their largest {issues,problems,needs}?
-UTILITY       {tool,utility,website,web destination,iPhone,mobile tool,mobile utility,mobile application,application,desktop application,flash application,AJAX application, JavaScript application}
+UTILITY       {tool,tool,utility,utility,website,web tool,web utility,iPhone application,mobile tool,mobile utility,mobile application,application,desktop application,flash application,AJAX application, JavaScript application}
 SOMEONE       {you,one,someone,a developer,a clever person,you and some friends,you and your team,a smart CEO,some developers,clever people}
 ACTIONS       {advertising,promoting,selling,reviewing,buying,finding,locating,finding deals on,finding free versions of,finding cheap advertising for}
-FOR           {targeting,for,to be used by,primarily for,of interest to}
-AD_TYPE       video ad
-AD_TYPE       contextual ad
-AD_TYPE       affilate link
-AD_TYPE       sponsored article
-AD_TYPE       audio ad
-AD_TYPE       AdSense ad
-AD_TYPE       Yahoo! ad
-AD_TYPE       Microsoft ad
+FOR           {targeting,for,to be used by,primarily for,of interest to,built for,designed for,created for,mostly for}
+AD_TYPE       {video ad,contextual ad,affilate link,sponsored article,audio ad,AdSense ad,Yahoo! ad,Microsoft ad}
 WAY_OF_MAKING_MONEY   {arbitrage play,monitization scheme,monitization strategy,business plan}
-ADJECTIVE     interesting
-ADJECTIVE     exciting
-ADJECTIVE     creative
-ADJECTIVE     non-obvious
-ADJECTIVE     {fun,light-hearted}
-USING         using
-USING         employing
-USING         leveraging
-USING         with
+ADJECTIVE     {interesting,exciting,creative,non-obvious,fun,light-hearted}
+USING         {using,employing,leveraging,with}
 SIMPLE_QUESTION_WORD  {might,perhaps,maybe,possibly}
 QUESTION_WORD  Given the resources {SIMPLE_QUESTION_WORD}
 QUESTION_WORD  With enough time {SIMPLE_QUESTION_WORD}
@@ -53,37 +40,17 @@ IMPROVEMENT   more efficient
 IMPROVEMENT   easier to use
 IMPROVEMENT   more obvious
 IMPROVEMENT   {cheaper,more affordable}
-BUILD_ACTION  {build,make,create,develop,hack together,put together,improvise,cobble together,hack}
+BUILD_ACTION  {build,make,create,develop,hack together,put together,improvise,cobble together}
 TO_BE_MADE    {thing,project,utility,tool,web app,desktop application,iPhone application,mobile application,blog,small site,detailed site,site,website,destination site,nitche site,vertical search engine,Flash application,JavaScript application,AJAX application}
 TO_BE_MADE_ABOUT  {a|TO_BE_MADE} {for,about}
-PRODUCT       {PRODUCT_TARGETS} social networking site
-PRODUCT       communication {tool,utility}
-PRODUCT       business-oriented version of {COMMUNICATION_TOOL}
-PRODUCT       non-profit-oriented version of {COMMUNICATION_TOOL}
-PRODUCT       {COMMUNICATION_TOOL} {for,designed for,targeting} {OCCUPATIONS}
-PRODUCT       {PRODUCT_TARGETS} communication {utility,tool}
-PRODUCT       {PRODUCT_TARGETS} collaborative editing {utility,tool}
-PRODUCT       {PRODUCT_TARGETS} accounting {utility,tool}
-PRODUCT       {PRODUCT_TARGETS} bookkeeping {utility,tool}
-PRODUCT       visualization {utility,tool}
-PRODUCT       {PRODUCT_TARGETS} blog network
-PRODUCT       directory of {PRODUCT|s}
-PRODUCT_TARGETS   {small business,enterprise,non-profit,business,personal,consumer,,,}
-OCCUPATIONS    doctors
-OCCUPATIONS    dentists
-OCCUPATIONS    programmers
-OCCUPATIONS    scientists
-OCCUPATIONS    lawyers
-OCCUPATIONS    industry professionals
-OCCUPATIONS    travelers
-OCCUPATIONS    CEOs
-OCCUPATIONS    veterinarians
-OCCUPATIONS    pilots
-OCCUPATIONS    farmers
-OCCUPATIONS    gardeners
-OCCUPATIONS    sales people
-OCCUPATIONS    knitters
-OCCUPATIONS    crafters
+PRODUCT       {PRODUCT_TYPES} {FOR} {PRODUCT_TARGETS|s}
+PRODUCT       {PRODUCT_SUBTYPES} {UTILITY} {FOR} {worldwide,,,,,,,,,international,poor,multi-lingual,disabled,casual,hobbyist,moonlighting} {OCCUPATIONS}
+PRODUCT       version of {TOOL} {FOR} {OCCUPATIONS}
+PRODUCT       {PRODUCT_TARGETS} {PRODUCT_SUBTYPES} {UTILITY}
+PRODUCT       {directory of every,,,,,list of every,index of every,listing of every,review site about every,comparison site about every} {PRODUCT}
+PRODUCT_TARGETS   {small business,enterprise,non-profit,political organization,environmental organization,business,consumer,government,educational institution,corporation,microISV,internet business}
+PRODUCT_SUBTYPES  {accounting,bookkeeping,communication,collaborative editing,visualization,shopping,networking}
+PRODUCT_TYPES   {social networking site,blog network,forum,web portal,news site,website of tool and utility listings,legal regulations info site,travel info site}
 OPTIMIZATION  fast enough
 OPTIMIZATION  easy enough to use
 OPTIMIZATION  sufficiently affordable
@@ -92,13 +59,13 @@ OPTIMIZATION  sufficiently advanced
 OPTIMIZATION  cheap enough
 OPTIMIZATION  priced appropriately enough
 OPTIMIZATION  appropriately entry level
-COMMUNICATION_TOOL  email
-COMMUNICATION_TOOL  instant messaging
-COMMUNICATION_TOOL  blogging
-COMMUNICATION_TOOL  Twitter
-COMMUNICATION_TOOL  Facebook
-COMMUNICATION_TOOL  Digg
-COMMUNICATION_TOOL  Google Wave
+TOOL          email
+TOOL          instant messaging
+TOOL          blogging
+TOOL          {web,product,web} search
+TOOL          {EXISTING_PRODUCT}
+TOOL          {EXISTING_PRODUCT}
+TOOL          {EXISTING_PRODUCT}
 GADGETS        solar panels
 GADGETS        computers
 GADGETS        electronics
