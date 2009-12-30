@@ -53,7 +53,9 @@ module IdeaMachine
       blocked[key] ||= []
       blocked[key] << result
 
-      result.gsub(/\{[^\}]+\}/i) do |sub_expression|
+      puts "#{key}: #{result}" if defined?(DEBUG_IDEA_MACHINE)
+
+      return_value = result.gsub(/\{[^\}]+\}/i) do |sub_expression|
         sub_expression = sub_expression[1..-2]
         if sub_expression.include?(",")
           sub_choices = sub_expression.split(",")
@@ -73,13 +75,14 @@ module IdeaMachine
           elsif sub_expression =~ /^c\|(.*)$/i
             pick($1, blocked).gsub(/^./) {|i| i.upcase}
           elsif sub_expression =~ /^(.*?)\|s$/i
-#            pick($1, blocked).gsub(/\w+$/) {|i| i.en.plural}
             pick($1, blocked).en.plural
           else
             pick(sub_expression, blocked)
           end
         end
       end
+      puts "Returning: #{return_value}" if defined?(DEBUG_IDEA_MACHINE)
+      return_value
     rescue OutOfOptionsRetry
       pick(key, blocked)
     rescue OutOfOptions
