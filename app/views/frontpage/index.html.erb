@@ -1,25 +1,34 @@
+<div id="tip"><span>Tip:</span> view at least 10 ideas for best results</div>
 <h1>Project Suggestions from the IdeaMachine</h1>
 <div>
   <div id="idea_container">
-    <div id="idea"></div>
+    <div id="suggestion_text">Suggestion: </div><div id="idea"></div>
   </div>
-  <a href="#" id="show_next">Show me another!</a>
+  <a href="#" id="show_next">Show me another</a>
 </div>
 
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/projectsuggestions/embed.js"></script><noscript><a href="http://disqus.com/forums/projectsuggestions/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="comments">
+  <h1>Comments</h1>
 
-<script type="text/javascript">
-//<![CDATA[
-(function() {
-	var links = document.getElementsByTagName('a');
-	var query = '?';
-	for(var i = 0; i < links.length; i++) {
-	if(links[i].href.indexOf('#disqus_thread') >= 0) {
-		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-	}
-	}
-	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/projectsuggestions/get_num_replies.js' + query + '"></' + 'script>');
-})();
-//]]>
-</script>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript" src="http://disqus.com/forums/projectsuggestions/embed.js"></script><noscript>
+  <a href="http://disqus.com/forums/projectsuggestions/?url=ref">View the discussion thread.</a></noscript>
 
+  <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+    var links = document.getElementsByTagName('a');
+    var query = '?';
+    for(var i = 0; i < links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    }
+    }
+    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/projectsuggestions/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  //]]>
+  </script>
+
+</div>
+
+Created by <a href="http://iterationlabs.com">Iteration Labs, LLC</a>.

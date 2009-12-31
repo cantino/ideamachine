@@ -5,5 +5,5 @@ staging:
   login: projsuggestion2
   password: pstestpass
 production:
-  login: projsuggestion
+  login: projsuggestions
   password: jjdkshdh

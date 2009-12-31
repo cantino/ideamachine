@@ -731,3 +731,799 @@ Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.jso
 
 Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-22 22:46:20) [GET]
 Completed in 86ms (View: 55, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:00:56) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:00:57) [GET]
+Completed in 90ms (View: 7, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:03:38) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+ERROR: compiling _run_erb_app47views47layouts47main46html46erb RAISED compile error
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:11: syntax error, unexpected '<'
+    <script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+      var disqus_developer = true;
+                          ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:13: syntax error, unexpected '<', expecting kEND
+    </script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: unknown regexp options - had
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...tput_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: g...
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...fer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+..."\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47layouts47main46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>Project Suggestions from the IdeaMachine</title>\n  "
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold', 'ideas' ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( javascript_include_tag :defaults ).to_s); @output_buffer.concat "\n  "
+;  if RAILS_ENV == "development"
+    <script>
+      var disqus_developer = true;
+    </script>
+  <% end ; @output_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n\n"
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n\n</body>\n</html>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:11: syntax error, unexpected '<'
+    <script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+      var disqus_developer = true;
+                          ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:13: syntax error, unexpected '<', expecting kEND
+    </script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: unknown regexp options - had
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...tput_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: g...
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...fer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+..."\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27: syntax error, unexpected $end, expecting kEND) on line #11 of app/views/layouts/main.html.erb:
+8:   <%= stylesheet_link_tag 'scaffold', 'ideas' %>
+9:   <%= javascript_include_tag :defaults %>
+10:   <% if RAILS_ENV == "development"
+11:     <script>
+12:       var disqus_developer = true;
+13:     </script>
+14:   <% end %>
+
+    app/views/layouts/main.html.erb:27:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:03:39) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+ERROR: compiling _run_erb_app47views47layouts47main46html46erb RAISED compile error
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:11: syntax error, unexpected '<'
+    <script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+      var disqus_developer = true;
+                          ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:13: syntax error, unexpected '<', expecting kEND
+    </script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: unknown regexp options - had
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...tput_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: g...
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...fer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+..."\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47layouts47main46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>Project Suggestions from the IdeaMachine</title>\n  "
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold', 'ideas' ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( javascript_include_tag :defaults ).to_s); @output_buffer.concat "\n  "
+;  if RAILS_ENV == "development"
+    <script>
+      var disqus_developer = true;
+    </script>
+  <% end ; @output_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+
+
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "</p>\n\n"
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n\n</body>\n</html>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:11: syntax error, unexpected '<'
+    <script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+      var disqus_developer = true;
+                          ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:13: syntax error, unexpected '<', expecting kEND
+    </script>
+     ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: unknown regexp options - had
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...tput_buffer.concat "\n</head>\n<body>\n\n<p style=\"color: g...
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected $undefined
+...fer.concat "\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+..."\n</head>\n<body>\n\n<p style=\"color: green\">"
+                              ^
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+/home/andrew/projects/iterationlabs/ideamachine/app/views/layouts/main.html.erb:27: syntax error, unexpected $end, expecting kEND) on line #11 of app/views/layouts/main.html.erb:
+8:   <%= stylesheet_link_tag 'scaffold', 'ideas' %>
+9:   <%= javascript_include_tag :defaults %>
+10:   <% if RAILS_ENV == "development"
+11:     <script>
+12:       var disqus_developer = true;
+13:     </script>
+14:   <% end %>
+
+    app/views/layouts/main.html.erb:27:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:03:46) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:03:47) [GET]
+Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:14:04) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:14:05) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:14:06) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:14:08) [GET]
+Completed in 81ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:14:43) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:14:44) [GET]
+Completed in 29ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:15:33) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:15:34) [GET]
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:15:47) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 25ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:15:48) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:15:49) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:15:50) [GET]
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:17:36) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:17:37) [GET]
+Completed in 83ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:18:08) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:18:10) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:18:51) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:18:52) [GET]
+Completed in 83ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:18:54) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:18:55) [GET]
+Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:19:19) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:19:20) [GET]
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:20:15) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:20:16) [GET]
+Completed in 87ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:28:30) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:28:31) [GET]
+Completed in 27ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:29:12) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:29:13) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:30:21) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:30:22) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:31:10) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:31:11) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:31:37) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:31:38) [GET]
+Completed in 156ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:31:52) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:31:54) [GET]
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:32:13) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:32:15) [GET]
+Completed in 32ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:32:20) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:32:22) [GET]
+Completed in 28ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:32:32) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:32:33) [GET]
+Completed in 29ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:32:34) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:32:35) [GET]
+Completed in 27ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:33:25) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:33:26) [GET]
+Completed in 31ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:33:36) [GET]
+Completed in 27ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:34:02) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 55ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:34:04) [GET]
+Completed in 48ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:34:05) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:34:06) [GET]
+Completed in 82ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:35:36) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:35:37) [GET]
+Completed in 29ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:35:48) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:35:49) [GET]
+Completed in 32ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:36:02) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:36:03) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:36:04) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:36:06) [GET]
+Completed in 27ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:36:10) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:36:11) [GET]
+Completed in 26ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:36:12) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:36:14) [GET]
+Completed in 29ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:37:35) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:37:36) [GET]
+Completed in 86ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:37:37) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:37:38) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:37:57) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:37:58) [GET]
+Completed in 34ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:39:52) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:39:53) [GET]
+Completed in 78ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:40:27) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:40:28) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:40:29) [GET]
+Completed in 32ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:40:29) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:40:31) [GET]
+Completed in 35ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:40:45) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:40:46) [GET]
+Completed in 82ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:40:47) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:40:49) [GET]
+Completed in 33ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:41:07) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:41:08) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:41:09) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]
+
+
+Processing FrontpageController#index (for 127.0.0.1 at 2009-12-30 16:41:53) [GET]
+Rendering template within layouts/main
+Rendering frontpage/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#generate to json (for 127.0.0.1 at 2009-12-30 16:41:54) [GET]
+Completed in 30ms (View: 1, DB: 0) | 200 OK [http://localhost/ideas/generate.json]

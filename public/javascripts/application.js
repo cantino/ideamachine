@@ -1,5 +1,5 @@
 $(function() {
-  $('#idea').text("Please hold on, I'm thinking...");
+  $('#idea').html("One moment...");
   $('#show_next').click(show_next_idea);
   show_next_idea();
 });
@@ -23,4 +23,5 @@ function show_next_idea() {
     });
     if (ideas.length < 10) load_ideas();
   }
+  return false;
 }
