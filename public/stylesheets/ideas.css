@@ -30,6 +30,7 @@ body, p, ol, ul, td {
   width: 600px;
   margin-left: 10px;
   float: left;
+  color: darkgreen;
 }
 
 #show_next {
@@ -52,7 +53,7 @@ body, p, ol, ul, td {
 }
 
 #comments {
-  margin-top: 50px;
+  margin-top: 200px;
   padding-top: 14px;
   border-top: 2px solid silver;
 }
