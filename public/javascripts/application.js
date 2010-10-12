@@ -1,5 +1,5 @@
 $(function() {
-  $('#idea').text("Please hold on, I'm thinking...");
+  $('#idea').html("One moment...");
   $('#show_next').click(show_next_idea);
   show_next_idea();
 });
@@ -19,8 +19,9 @@ function show_next_idea() {
   } else {
     var idea = ideas.shift();
     $('#idea').fadeOut(100, function() {
-      $('#idea').text(idea).fadeIn(100);
+      $('#idea').html(idea).fadeIn(100);
     });
     if (ideas.length < 10) load_ideas();
   }
+  return false;
 }

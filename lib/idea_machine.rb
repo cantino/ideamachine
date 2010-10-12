@@ -29,22 +29,33 @@ module IdeaMachine
       end
     end
 
-    def generate(num=1)
+    def generate(num=1, force_index = nil)
       out = []
       num.times do
-        out << pick('RESULT').strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+        begin
+          out << pick('RESULT', {}, force_index).strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+        rescue OutOfOptionsRetry
+          puts "WARNING: Got OutOfOptionsRetry"
+        end
       end
       out
     end
 
-    def pick(key, blocked = {})
+    def pick(key, blocked = {}, force_index = nil)
+      raise "Cannot find key #{key}" unless @patterns[key]
       choices = (@patterns[key] - (blocked[key] || []))
       raise OutOfOptions if choices.length == 0
-      result = choices[choices.length * rand]
+      result = if force_index
+        choices[force_index]
+      else
+        choices[choices.length * rand]
+      end
       blocked[key] ||= []
       blocked[key] << result
 
-      result.gsub(/\{[^\}]+\}/i) do |sub_expression|
+      puts "#{key}: #{result}" if defined?(DEBUG_IDEA_MACHINE)
+
+      return_value = result.gsub(/\{[^\}]+\}/i) do |sub_expression|
         sub_expression = sub_expression[1..-2]
         if sub_expression.include?(",")
           sub_choices = sub_expression.split(",")
@@ -55,22 +66,27 @@ module IdeaMachine
             sub_choice
           end
         else
-          if sub_expression =~ /^a\|(.*)$/i
-            pick($1, blocked).en.a
+          if sub_expression =~ /^(a)\|(.*)$/i
+            if ($1 == 'A')
+              pick($2, blocked).en.a.gsub(/^./) {|i| i.upcase}
+            else
+              pick($2, blocked).en.a
+            end
           elsif sub_expression =~ /^c\|(.*)$/i
             pick($1, blocked).gsub(/^./) {|i| i.upcase}
           elsif sub_expression =~ /^(.*?)\|s$/i
-#            pick($1, blocked).gsub(/\w+$/) {|i| i.en.plural}
             pick($1, blocked).en.plural
           else
             pick(sub_expression, blocked)
           end
         end
       end
-    rescue OutOfOptions
-      raise OutOfOptionsRetry
+      puts "Returning: #{return_value}" if defined?(DEBUG_IDEA_MACHINE)
+      return_value
     rescue OutOfOptionsRetry
       pick(key, blocked)
+    rescue OutOfOptions
+      raise OutOfOptionsRetry
     end
   end
 end

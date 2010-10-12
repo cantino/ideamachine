@@ -1,7 +1,64 @@
-#idea {}
+body { background-color: #fff; color: #333; }
 
-#idea_container {
-  height: 50px;
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
 }
 
-#show_next {}
+#tip {
+  float: right;
+  padding: 10px;
+  margin 10px;
+  border: 1px solid silver;
+}
+
+#tip span {
+  font-weight: bold;
+}
+
+#idea_container {
+  height: 75px;
+}
+
+#suggestion_text {
+  float: left;
+  font-weight: bold;
+}
+
+#idea {
+  width: 650px;
+  margin-left: 10px;
+  float: left;
+  color: darkgreen;
+  font-size: 16px;
+}
+
+#show_next {
+  display: block;
+  border: 1px solid silver;
+  background-color: #EEE;
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#show_next:hover {
+  text-decoration: none;
+  background-color: #333;
+  color: #EEE;
+}
+
+#comments {
+  margin-top: 200px;
+  padding-top: 14px;
+  border-top: 2px solid silver;
+}
+
+#comments h1 {
+  margin: 0;
+}

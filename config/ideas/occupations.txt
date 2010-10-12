@@ -1,0 +1,67 @@
+OCCUPATIONS    doctors
+OCCUPATIONS    managers
+OCCUPATIONS    professionals
+OCCUPATIONS    administrators
+OCCUPATIONS    military members
+OCCUPATIONS    engineers
+OCCUPATIONS    nurses
+OCCUPATIONS    artists
+OCCUPATIONS    librarians
+OCCUPATIONS    legal aids
+OCCUPATIONS    lawmakers
+OCCUPATIONS    designers
+OCCUPATIONS    dancers
+OCCUPATIONS    singers
+OCCUPATIONS    song writers
+OCCUPATIONS    architects
+OCCUPATIONS    museum curators
+OCCUPATIONS    physical trainers
+OCCUPATIONS    teachers
+OCCUPATIONS    professors
+OCCUPATIONS    researchers
+OCCUPATIONS    visual designers
+OCCUPATIONS    singers
+OCCUPATIONS    performers
+OCCUPATIONS    news casters
+OCCUPATIONS    engineers
+OCCUPATIONS    computer programmers
+OCCUPATIONS    computer hackers
+OCCUPATIONS    computer engineers
+OCCUPATIONS    mathematicians
+OCCUPATIONS    physicists
+OCCUPATIONS    biologists
+OCCUPATIONS    chemistry students
+OCCUPATIONS    students
+OCCUPATIONS    cooks
+OCCUPATIONS    gardeners
+OCCUPATIONS    barbers
+OCCUPATIONS    hair stylists
+OCCUPATIONS    builders
+OCCUPATIONS    construction workers
+OCCUPATIONS    financial clerks
+OCCUPATIONS    office administrators
+OCCUPATIONS    secretaries
+OCCUPATIONS    fishermen
+OCCUPATIONS    farmers
+OCCUPATIONS    foresters
+OCCUPATIONS    mechanics
+OCCUPATIONS    repairmen
+OCCUPATIONS    woodworkers
+OCCUPATIONS    system engineers
+OCCUPATIONS    bus drivers
+OCCUPATIONS    truck drivers
+OCCUPATIONS    dentist
+OCCUPATIONS    programmers
+OCCUPATIONS    scientists
+OCCUPATIONS    lawyers
+OCCUPATIONS    industry professionals
+OCCUPATIONS    travelers
+OCCUPATIONS    CEOs
+OCCUPATIONS    veterinarians
+OCCUPATIONS    pilots
+OCCUPATIONS    farmers
+OCCUPATIONS    gardeners
+OCCUPATIONS    sales people
+OCCUPATIONS    knitters
+OCCUPATIONS    crafters
+OCCUPATIONS    educators

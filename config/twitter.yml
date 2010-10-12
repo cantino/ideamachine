@@ -1,0 +1,9 @@
+development:
+  login: projsuggestion2
+  password: pstestpass
+staging:
+  login: projsuggestion2
+  password: pstestpass
+production:
+  login: projsuggestions
+  password: jjdkshdh
