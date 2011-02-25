@@ -1,0 +1,29 @@
+RESULT    {A|SIZE} {PLANET_STATE} {PLANET_TYPE} {orbiting,drifting around} {a|STAR_TYPE}, {named,called} {NAME} in the {NAME} language.
+SIZE      {large,small,medium size,inconsequential}
+PLANET_TYPE   {brown,white,sub-brown} dwarf
+PLANET_TYPE   circumbinary planet
+PLANET_TYPE   double planet
+PLANET_TYPE   extragalactic planet
+PLANET_TYPE   extrasolar planet
+PLANET_TYPE   gas giant
+PLANET_TYPE   iron planet
+PLANET_TYPE   mesoplanet
+PLANET_TYPE   planetar
+PLANET_TYPE   protoplanet
+PLANET_TYPE   Earth-type planet
+PLANET_TYPE   terrestrial planet
+STAR_TYPE   {barium,binary,boson,carbon,compact,double,electroweak,exotic,flare,giant,helium,iron,late-type,main sequence,neutron,quark} star
+STAR_TYPE   {blue,bright} {giant,straggler,supergiant} star
+STAR_TYPE   {yellow,} hypergiant star
+STAR_TYPE   {solo,binary,optical,sub-optical,X-ray,NULL} pulsar
+STAR_TYPE   photometric-standard star
+STAR_TYPE   population {I,II,III} star
+STAR_TYPE   protostar
+STAR_TYPE   quasistar
+STAR_TYPE   radio-quiet neutron star
+STAR_TYPE   red {dwarf,giant,supergiant} star
+STAR_TYPE   {S,K,O,A,B}-type star
+STAR_TYPE   stellar black hole
+STAR_TYPE   {sub,super}giant star
+PLANET_STATE {inhospitable,possibly inhabitable,mineral-rich}
+NAME  {Kla,Qu,Ho,Manu,Cha,Erbo,Mu,Circa,La,Do}{ma,se,sera,fla,fu}{',NULL}{cha,dor,eria,slo,mast,qa,do,la,circa,mu,erbo,NULL} {I,II,III,minor,major,NULL,NULL,NULL}

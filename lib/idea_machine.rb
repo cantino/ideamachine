@@ -8,12 +8,15 @@ module IdeaMachine
   class OutOfOptionsRetry < RuntimeError; end
 
   class Constructor
-    def initialize(templates)
+    attr_accessor :options
+
+    def initialize(templates, options = {})
       if templates.is_a?(String)
         init_from_string(templates)
       else
         @patterns = templates
       end
+      @options = options
     end
 
     def init_from_string(templates)
@@ -24,7 +27,7 @@ module IdeaMachine
           @patterns[$1] ||= []
           @patterns[$1] << $2
         else
-          puts "Don't understand: #{line}"
+          puts "I don't understand: #{line}"
         end
       end
     end
@@ -33,7 +36,7 @@ module IdeaMachine
       out = []
       num.times do
         begin
-          out << pick('RESULT', {}, force_index).strip.squeeze(" ").gsub(/\s+([\?\!\.\,])/, '\1')
+          out << pick('RESULT', {}, force_index).strip.gsub('NULL', '').gsub(/\s+/, ' ').gsub(/\s+([\?\!\.\,])/, '\1')
         rescue OutOfOptionsRetry
           puts "WARNING: Got OutOfOptionsRetry"
         end
@@ -51,9 +54,9 @@ module IdeaMachine
         choices[choices.length * rand]
       end
       blocked[key] ||= []
-      blocked[key] << result
+      blocked[key] << result if options[:disallow_duplicates]
 
-      puts "#{key}: #{result}" if defined?(DEBUG_IDEA_MACHINE)
+      puts "#{key}: #{result}" if options[:debug]
 
       return_value = result.gsub(/\{[^\}]+\}/i) do |sub_expression|
         sub_expression = sub_expression[1..-2]
@@ -81,7 +84,7 @@ module IdeaMachine
           end
         end
       end
-      puts "Returning: #{return_value}" if defined?(DEBUG_IDEA_MACHINE)
+      puts "Returning: #{return_value}" if options[:debug]
       return_value
     rescue OutOfOptionsRetry
       pick(key, blocked)
