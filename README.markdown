@@ -9,9 +9,9 @@ or
     ruby examples/planets/generate_planets.rb
 
 The grammar files consist of entries like
-    RESULT  {a|FRUIT}
+    RESULT  Let's eat {a|FRUIT}
     FRUIT   {apple,plum,orange}
-This would result in "a plum", "an apple", and "an orange" 1/3 of the time each.  There can be many RESULT lines, one will be selected at random to output.  {A|FRUIT} would give "A plum", "An apple", and "An orange".
+This would result in "Let's eat a plum", "Let's eat an apple", and "Let's eat an orange" 1/3 of the time each.  There can be many RESULT lines, one will be selected at random to output.  {A|FRUIT} would give "A plum", "An apple", and "An orange".
 
     FRUIT   {apple,plum,orange}
 is equivalent to
@@ -27,12 +27,13 @@ Here is a more complex example:
     RESULT    {A|SIZE} {PLANET_STATE} {PLANET_TYPE} {orbiting,drifting around} {a|STAR_TYPE}, {named,called} {NAME} in the {NAME} language.
     SIZE      {large,small,medium size,inconsequential}
     PLANET_TYPE   {brown,white,sub-brown} dwarf
-    ... see examples/planets/parts/planets.txt for the whole thing.
+    ... see <a href="https://github.com/iterationlabs/ideamachine/blob/master/examples/planets/parts/planets.txt">examples/planets/parts/planets.txt</a> for the whole thing.
 
 Possible results include:
     A large inhospitable double planet drifting around a photometric-standard star, named Muse'slo minor in the Hofuqa language.
     A medium size inhospitable Earth-type planet orbiting a blue supergiant star, named Manuseraslo I in the Dosera'mu language.
 
+This is flexible and recursive, use it to generate descriptions for your new game, to make your emails all slightly different, etc.
 
 ## Oh, also
 ...here are some possible names for a site based on the ideas example:
