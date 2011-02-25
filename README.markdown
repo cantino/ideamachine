@@ -27,7 +27,7 @@ Here is a more complex example:
     RESULT    {A|SIZE} {PLANET_STATE} {PLANET_TYPE} {orbiting,drifting around} {a|STAR_TYPE}, {named,called} {NAME} in the {NAME} language.
     SIZE      {large,small,medium size,inconsequential}
     PLANET_TYPE   {brown,white,sub-brown} dwarf
-    ... see <a href="https://github.com/iterationlabs/ideamachine/blob/master/examples/planets/parts/planets.txt">examples/planets/parts/planets.txt</a> for the whole thing.
+... see <a href="https://github.com/iterationlabs/ideamachine/blob/master/examples/planets/parts/planets.txt">examples/planets/parts/planets.txt</a> for the whole thing.
 
 Possible results include:
     A large inhospitable double planet drifting around a photometric-standard star, named Muse'slo minor in the Hofuqa language.
