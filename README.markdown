@@ -44,4 +44,4 @@ Possible results include:
     projectsuggest.com
     whatshouldicreate.com
 
-If you build one of these, let me know!  I have a somewhat working example online at (ideamachine.heroku.com)[http://ideamachine.heroku.com/)
+If you build one of these, let me know!  I have a somewhat working example online at <a href="http://ideamachine.heroku.com/">ideamachine.heroku.com</a>
