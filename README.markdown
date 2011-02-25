@@ -1,12 +1,12 @@
 IdeaMachine - A generative grammar for fun and profit
 =================
 
-IdeaMachine is a fairly simple generative grammar originally used for a silly idea generator, available in the examples/ideas directory.  We also have a simple planet description generator in examples/planets.
+IdeaMachine is a fairly simple generative grammar originally used for a silly idea generator, available in the examples/ideas directory.  There is also a simple planet description generator in examples/planets.
 
 To see it in action, just run:
     ruby examples/ideas/generate_ideas.rb
 or
-    ruby examples/ideas/generate_planets.rb
+    ruby examples/planets/generate_planets.rb
 
 The grammar files consist of entries like
     RESULT  {a|FRUIT}
