@@ -975,7 +975,6 @@ API  <a href='http://www.programmableweb.com/api/pricegrabber' target='_blank'>P
 API  <a href='http://www.programmableweb.com/api/pricerunner' target='_blank'>PriceRunner API</a>
 API  <a href='http://www.programmableweb.com/api/printfection' target='_blank'>Printfection API</a>
 API  <a href='http://www.programmableweb.com/api/prodigem' target='_blank'>Prodigem API</a>
-API  <a href='http://www.programmableweb.com/api/programmableweb' target='_blank'>ProgrammableWeb API</a>
 API  <a href='http://www.programmableweb.com/api/project-vote-smart' target='_blank'>Project Vote Smart API</a>
 API  <a href='http://www.programmableweb.com/api/prosper' target='_blank'>Prosper API</a>
 API  <a href='http://www.programmableweb.com/api/prostores' target='_blank'>ProStores API</a>
